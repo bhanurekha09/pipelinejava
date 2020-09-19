@@ -12,6 +12,20 @@ pipeline{
                                
                          }
                     }
+                     
+                     
+                     
+                   
+                    stage ( 'STAGE 1' )  {
+                     agent { label 'jenkin-slave1' }
+                     steps {
+                               git 'https://github.com/bhanurekha09/java.git'
+                               sh 'mvn clean install'
+                               echo "**********************"
+                               sh 'sleep 10'
+                               
+                         }
+                    }
         }
         
         
