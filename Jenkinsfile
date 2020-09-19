@@ -8,7 +8,7 @@ pipeline{
                                git 'https://github.com/bhanurekha09/csource.git'
                                sh 'make'
                                echo "**********************"
-                               sh '10'
+                               sh 'sleep 10'
                                sh 'rmdir csource'
                          }
                     }
