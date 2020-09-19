@@ -9,7 +9,7 @@ pipeline{
                                sh 'make'
                                echo "**********************"
                                sh 'sleep 10'
-                               sh 'rmdir csource'
+                               
                          }
                     }
         }
