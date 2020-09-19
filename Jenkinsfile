@@ -5,10 +5,11 @@ pipeline{
                      stage ( 'STAGE 1' )  {
                      agent { label 'jenkin-slave2' }
                   steps {
-                               git 'https://github.com/bhanurekha09/java.git'
+                               git 'https://github.com/bhanurekha09/csource.git'
                                sh 'make'
                                echo "**********************"
                                sh '10'
+                               sh 'rmdir csource'
                          }
                     }
         }
