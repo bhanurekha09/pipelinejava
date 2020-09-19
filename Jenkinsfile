@@ -3,7 +3,7 @@ pipeline{
            stages {
                      
                      stage ( 'STAGE 1' )  {
-                     agent { labe1 'master' }
+                     agent { label 'master' }
                   steps {
                                git 'https://github.com/bhanurekha09/java.git'
                                sh 'mvn clean install'
